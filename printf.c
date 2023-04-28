@@ -18,7 +18,7 @@ int _printf(const char *format, ...)
 		}
 		else if(format[x +1] == 's')
 		{
-			_put(va_arg(print, char s []));
+			_puts(va_arg(print, char *));
 		}
 		y++;
 	}

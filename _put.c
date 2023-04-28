@@ -1,5 +1,5 @@
 #include"main.h"
-int _puts(char t[])
+int _puts(char *t)
 {
 	int y = 0;
 	int count = 0;
