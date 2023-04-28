@@ -4,21 +4,22 @@ int _printf(const char *format, ...)
 {
 	va_list print;
 	va_start(print,format)
-	va_arg(print, char *s)
+	va_arg(print, int)
 	int x;
+	int y = 0
 	for (x = 0; format[x] != '\0'; x++)
 	{
 		if (format[x] == '\0')
 		{
 			return;
 		}
-		if(format[x] == %)
-			switch(format[x])
-			{
-				case d:
-				(int result = va_arg(print,int))
-					_putchar('0' + result);
-				break;
-				}
+		if(format[x] != '%')
+		{
+			_putchar('format[x]');
+				y++;
+		}
+		return (y);
 	}
+	va_end(print);
+}
 
