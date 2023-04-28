@@ -15,8 +15,8 @@ int _printf(const char *format, ...)
 		else if(format[x +1] == 'c')
 		{
 			_putchar(va_arg(print, int));
-			y++;
 		}
+		y++;
 	}
 	va_end(print);
 	return (y);
