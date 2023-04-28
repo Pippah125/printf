@@ -2,7 +2,7 @@
 #include<stdarg.h>
 int _printf(const char *format, ...)
 {
-	va_list print
+	va_list print;
 	va_start(print,format)
 	va_arg(print, char *s)
 	int x;
