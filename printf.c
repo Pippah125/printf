@@ -2,11 +2,12 @@
 #include<stdarg.h>
 int _printf(const char *format, ...)
 {
-	va_list print;
-	va_start(print,format)
-	va_arg(print, int)
 	int x;
-	int y = 0
+	int y = 0;
+
+	va_list print;
+	va_start(print,format);
+	va_arg(print, int)
 	for (x = 0; format[x] != '\0'; x++)
 	{
 		if (format[x] == '\0')
