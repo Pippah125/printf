@@ -11,8 +11,12 @@ int _printf(const char *format, ...)
 		if(format[x] != '%')
 		{
 			_putchar(format[x]);
-				y++;
 		}
+		else if(format[x +1] == c)
+		{
+			_putchar(va_arg(print, int));
+		}
+		y++;
 	}
 	va_end(print);
 	return (y);
