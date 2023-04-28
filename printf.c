@@ -20,7 +20,7 @@ int _printf(const char *format, ...)
 		{
 			int v = _puts(va_arg(print, char *));
 			x++;
-			y++ = (v - 1);
+			y += (v - 1);
 		}
 		y++;
 	}
