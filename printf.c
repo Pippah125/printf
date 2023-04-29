@@ -20,8 +20,8 @@ int _printf(const char *format, ...)
 		else if(format[x +1] == 's')
 		{
 			int v = _puts(va_arg(print, char *));
-			y += (v - 1);
 			x++;
+			y += (v - 1);
 		}
 		else if(format[x + 1] == '%')
 		{
