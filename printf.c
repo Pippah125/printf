@@ -26,7 +26,6 @@ int _printf(const char *format, ...)
 		else if(format[x + 1] == '%')
 		{
 			_putchar('%');
-			_putchar(format[x]);
 			x++;
 		}
 		y++;
