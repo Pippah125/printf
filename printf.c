@@ -22,6 +22,11 @@ int _printf(const char *format, ...)
 			x++;
 			y += (v - 1);
 		}
+		else if(format[x + 1]) == '%'
+		{
+			_putchar(%d);
+			x++;
+		}
 		y++;
 	}
 	va_end(print);
