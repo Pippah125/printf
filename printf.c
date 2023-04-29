@@ -27,12 +27,7 @@ int _printf(const char *format, ...)
 		{
 			_putchar('%');
 			x++;
-		}
-		else if (format[x + 1] == '!')
-		{
-			_putchar('%');
-			_putchar('!');
-			x++;
+			y++;
 		}
 		y++;
 	}
