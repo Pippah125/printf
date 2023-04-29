@@ -19,8 +19,8 @@ int _printf(const char *format, ...)
 		else if(format[x +1] == 's')
 		{
 			int v = _puts(va_arg(print, char *));
-			x++;
 			y += (v - 1);
+			x++;
 		}
 		else if(format[x + 1] == '%')
 		{
