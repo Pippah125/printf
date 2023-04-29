@@ -15,6 +15,7 @@ int _printf(const char *format, ...)
 		else if(format[x +1] == 'c')
 		{
 			_putchar(va_arg(print, int));
+			x++;
 		}
 		else if(format[x +1] == 's')
 		{
