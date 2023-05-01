@@ -7,12 +7,18 @@ int callback(int num)
 	{
 		return (0);
 	}
-	else
+	if (num < 0)
 	{
-		n = num % 10;
+		_putchar('-');
+		num = -num
+			count ++;
 	}
-	callback(n);
-	_putchar(num % 10);
+	if ( num >= 10)
+	{
+		count += callback(num /10);
+	}
+	
+	_putchar((num % 10)+ '0');
 	count++;
-	return(0);
+	return(count);
 }

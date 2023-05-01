@@ -40,6 +40,12 @@ int _printf(const char *format, ...)
 			_putchar('%');
 			x++;
 		}
+		else if (format[x +1] == 'd')
+		{
+			int call = (va_arg(print, int));
+			y += callback(num);
+			x++;
+		}
 		else
 		{
 			_putchar(format[x]);
