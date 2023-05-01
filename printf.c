@@ -5,6 +5,7 @@ int _printf(const char *format, ...)
 {
 	int x;
 	int y = 0;
+	int v;
 	va_list print;
 	va_start(print, format);
 	if(format == NULL)
@@ -24,12 +25,13 @@ int _printf(const char *format, ...)
 		}
 		else if(format[x +1] == 's')
 		{
-			char *betty = (va_arg(print, char *);
+			char * betty = (va_arg(print, char *));
 			if(betty == NULL)
 			{
 			betty = "(null)";
 			}
-			int v = _puts(va_arg(print, char *));
+
+			v = _puts(betty );
 			x++;
 			y += (v - 1);
 		}
@@ -37,6 +39,10 @@ int _printf(const char *format, ...)
 		{
 			_putchar('%');
 			x++;
+		}
+		else
+		{
+			_putchar(format[x]);
 		}
 
 		y++;
