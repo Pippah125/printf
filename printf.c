@@ -6,6 +6,10 @@ int _printf(const char *format, ...)
 	int y = 0;
 	va_list print;
 	va_start(print, format);
+	if(format == NULL)
+	{
+		return(-1)
+	}
 	for (x = 0; format[x] != '\0'; x++)
 	{
 		if(format[x] != '%')
@@ -19,10 +23,6 @@ int _printf(const char *format, ...)
 		}
 		else if(format[x +1] == 's')
 		{
-			if( s == NULL)
-			{
-				return (null);
-			}
 			int v = _puts(va_arg(print, char *));
 			x++;
 			y += (v - 1);
