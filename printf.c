@@ -1,5 +1,6 @@
 #include"main.h"
 #include<stdarg.h>
+#include<stddef.h>
 int _printf(const char *format, ...)
 {
 	int x;
@@ -8,7 +9,7 @@ int _printf(const char *format, ...)
 	va_start(print, format);
 	if(format == NULL)
 	{
-		return(-1)
+		return(-1);
 	}
 	for (x = 0; format[x] != '\0'; x++)
 	{
