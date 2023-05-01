@@ -33,10 +33,7 @@ int _printf(const char *format, ...)
 			_putchar('%');
 			x++;
 		}
-		else if (format[x + 1] ==  NULL)
-		{
-			_putchar('');
-		}
+
 		y++;
 	}
 	va_end(print);
