@@ -17,6 +17,10 @@ int _printf(const char *format, ...)
 		{
 			_putchar(format[x]);
 		}
+		else if (format[x] == '%')
+		{
+			x++;
+		}
 		else if(format[x +1] == 'c')
 		{
 			_putchar(va_arg(print, int));
