@@ -2,7 +2,7 @@
 int callback(int num)
 {
 	int count = 0;
-	int n;
+
 	if(num == 0)
 	{
 		return (0);
@@ -10,7 +10,7 @@ int callback(int num)
 	if (num < 0)
 	{
 		_putchar('-');
-		num = -num
+		num = -num;
 			count ++;
 	}
 	if ( num >= 10)

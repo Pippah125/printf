@@ -42,7 +42,7 @@ int _printf(const char *format, ...)
 		}
 		else if (format[x +1] == 'd')
 		{
-			int call = (va_arg(print, int));
+			int num = (va_arg(print, int));
 			y += callback(num);
 			x++;
 		}
