@@ -24,6 +24,11 @@ int _printf(const char *format, ...)
 		}
 		else if(format[x +1] == 's')
 		{
+			char *betty = (va_arg(print, char *);
+			if(betty == NULL)
+			{
+			betty = "(null)";
+			}
 			int v = _puts(va_arg(print, char *));
 			x++;
 			y += (v - 1);
