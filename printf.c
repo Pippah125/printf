@@ -43,8 +43,9 @@ int _printf(const char *format, ...)
 		else if (format[x +1] == 'd')
 		{
 			int num = (va_arg(print, int));
-			y += callback(num);
+			y += (callback(num));
 			x++;
+			_putchar('\n');
 		}
 		else
 		{
